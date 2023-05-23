@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" class="css">
+    <title>My ToDos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>To-Do Keeper</h1>
+        </nav>
+    </header>
+    <main>
+        <section class="left">
+            <h2>Add Task</h2>
+            <br>
+            <div class="form">
+                <label for="titl">Title</label>
+                <br>
+                <input type="text" id="titl" placeholder="Title" required>
+                <br>
+                <label for="desc">Description</label>
+                <br>
+                <textarea id="desc" placeholder=" Description"></textarea>
+                <button id="save" class="save">Save</button>
+            </div>
+        </section>
+
+        <section id="right" class="right">
+            <h2 style="text-align: center; margin-bottom: 5px;">Saved ToDos</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td><hr></td>
+                        <td><hr></td>
+                        <td><hr></td>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </section>
+
+        <section id="pop-up" class="pop-up hidden">
+            <button class="close" onclick="closePopup()">close</button>
+            <h1 id="pop-title" class="title">Title</h1>
+            <hr>
+            <br>
+            <p id="pop-desc" class="description">
+            
+            </p>
+        </section>
+    </main>
+    <footer>
+        Made by Trinanjan Pal
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
